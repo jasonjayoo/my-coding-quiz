@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My-Coding-Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main id="container">
+      <div class="start-screen">
+        <h1>Test Your Coding Knowledge</h1>
+        <h3>
+          This quiz is to test your coding knowledge. <br />(before clicking
+          start, please review the rules below.)
+        </h3>
+        <br />
+        <h4>Rules:</h4>
+        <ol>
+          <li>
+            You will have exactly <strong>sixty seconds</strong> to complete
+            this quiz.
+          </li>
+          <li>
+            For every incorrect answer selected
+            <strong>eight seconds</strong> will be deducted from your remaining
+            time
+          </li>
+        </ol>
+        <h5>Good Luck!</h5>
+        <button id="start">START</button>
+      </div>
+
+      <div class="question_1 hide">
+        <div id="questions">What does the DOM stand for?</div>
+
+        <div id="answers1">
+          <button class="btn1" id="a1">Digital Optimization Method</button>
+
+          <button class="btn1" id="a2">Document Object Model</button>
+
+          <button class="btn1" id="a3">Downloadable Object Multiples</button>
+
+          <button class="btn1" id="a4">Direct Object Modulus</button>
+        </div>
+      </div>
+
+      <div class="question_2 hide">
+        <div id="questions">What is NOT an HTML semantic</div>
+        <div id="answers2">
+          <button class="btn2" id="b1">body</button>
+
+          <button class="btn2" id="b2">head</button>
+
+          <button class="btn2" id="b3">conclusion</button>
+
+          <button class="btn2" id="b4">footer</button>
+        </div>
+      </div>
+
+      <div class="question_3 hide">
+        <div id="questions">In how many days was Javascript created?</div>
+        <div id="answers3">
+          <button class="btn3" id="c1">10</button>
+
+          <button class="btn3" id="c2">1</button>
+
+          <button class="btn3" id="c3">100</button>
+
+          <button class="btn3" id="c4">500</button>
+        </div>
+      </div>
+
+      <div class="question_4 hide">
+        <div id="questions">In Javascript what does the (.push) method do?</div>
+        <div id="answers4">
+          <button class="btn4" id="d1">
+            Removes an item from the end of an array
+          </button>
+
+          <button class="btn4" id="d2">
+            It adds an item to the end of an array
+          </button>
+
+          <button class="btn4" id="d3">
+            It pushes out the code to the browser
+          </button>
+
+          <button class="btn4" id="d4">It does nothing</button>
+        </div>
+      </div>
+
+      <div class="question_5 hide">
+        <div id="questions">
+          In CSS, what does the border-radius property do?
+        </div>
+        <div id="answers5">
+          <button class="btn5" id="e1">It adds a shadow to an item</button>
+
+          <button class="btn5" id="e2">It rounds the edges of a square</button>
+
+          <button class="btn5" id="e3">
+            It gives you the radius of an image
+          </button>
+
+          <button class="btn5" id="e4">
+            It gives you the radial size of a hypotenuse
+          </button>
+        </div>
+      </div>
+
+      <section class="quiz-time-screen hide">
+        <div class="quiz-timer">
+          <p>Time: <span id="countdown">60</span> Seconds Remaining</p>
+        </div>
+      </section>
+
+      <div class="end-screen hide">
+        <div id="last-screen">
+          <h2>Your Final Score: <span id="score">0</span></h2>
+          <!-- <div id="final-score"></div> -->
+          <input
+            type="text"
+            class="initialsField"
+            placeholder="Type your initials here"
+            name="initials"
+            maxlength="3"
+            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"/>
+          <button id="submit">submit</button>
+        </div>
+      </div>
+
+      <footer class="final-screen hide">
+        <div class="reset-screen">
+          <span id="initials-score">Your Initials & Score</span>
+          <div id="all-scores"></div>
+          <h3>Click reset to try again!</h3>
+          <button id="reset">reset</button>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

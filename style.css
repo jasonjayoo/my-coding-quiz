@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(217deg, #1a87e0, #22d4b1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hide{
+    display: none;
+}
+
+main {
+    max-width:50%;
+    margin: 4rem auto;
+    padding: 25px 5px 25px;
+    background-color: rgb(245, 241, 207);
+    /* background-image: linear-gradient(220deg, #012b96, #42d099,#701569); */
+    border-radius: 8px;
+    border: 1px solid rgb(203, 208, 216);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.118);
+    font-size: 62.5%;
+}
+
+h4 {
+    color: red;
+    font-size:1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+    padding-bottom:1rem;
+}
+
+.start-screen {
+    text-align: center;
+    padding: 0 3rem;
+}
+
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(217deg, #1d1d1d, #323030);
+    line-height: 20px;
+    padding: 20px 30px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px gray;
+    margin-bottom: 1rem;
+}
+
+.start-screen h3 {
+    font-size: 15px;
+    display: block;
+}
+
+.start-screen ol {
+    font-size: 20px;
+}
+
+.start-screen li {
+    text-align: start;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+
+.start-screen h5 {
+    font-size: 25px;
+    color:rgb(0, 13, 128);
+    text-align: center;
+}
+
+#start {
+    background: linear-gradient(217deg, #1a87e0, #22d4b1);
+    border: 1px solid #1a87e0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.603);
+    color: white;
+    font-size: 25px;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: .75rem 2rem;
+}
+
+#start:hover {
+    cursor: pointer;
+    background: darkblue;
+}
+
+#start:active {
+    box-shadow: none;
+    background: red;
+}
+
+
+#answers1, #answers2, #answers3, #answers4, #answers5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    margin-left: 3px;
+    width: fit-content;
+}
+
+#questions {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    margin-left: 3px;
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+    background-color: lightgray;
+    border-left: 1px solid black; 
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px #0000000f;
+    color: black;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    width: fit-content;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover {
+    cursor: pointer;
+    background: yellow;
+}
+
+.btn1:active, .btn2:active, .btn3:active, .btn4:active, .btn5:active {
+    box-shadow: none;
+    background: red;
+}
+
+#a2:active, #b3:active, #c1:active, #d2:active, #e2:active {
+    box-shadow: none;
+    background: green;
+}
+
+
+.quiz-timer {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    background: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 20px;
+}
+
+#countdown {
+    color: red;
+}
+
+#last-screen {
+    margin: 50%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+#last-screen h2 {
+    font-size: 1em;
+}
+
+#score {
+    color: rgb(14, 28, 231);
+    font-size: 1.5em;
+}
+
+
+input {
+    text-align: center;
+    border: 1px solid black; 
+    box-shadow: 1px 1px 2px black;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+#submit {
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+}
+
+#submit:active {
+    cursor: pointer;
+    background-color: green;
+}
+
+.reset-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#initials-score {
+    margin: 0 auto;
+    font-size: 35px;
+    padding: 1rem 2rem;
+    border: 3px solid rgb(49, 49, 49); 
+    box-shadow: 3px 3px 6px black;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+footer h3 {
+    color:rgb(15, 179, 102);
+    font-size: 12px;
+    margin-bottom: 1.5em;
+}
+footer #all-scores{
+    font-size: 28px;
+    margin-top: .3em;
+    margin-bottom: 1em;
+    font-family: monospace;
+    color:rgb(55, 16, 230);
+}
+
+#reset {
+    display: block;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .2rem .8rem;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+#reset:active {
+    cursor: pointer;
+    background-color: rgb(28, 207, 28);
+}
+
+@media screen and (max-width: 900px){
+    main {
+        max-width:40%;
+        max-height: 80%;
+    }
+    .start-screen h5 {
+        font-size: 18px;
+        margin-top: -1.8rem;
+    }
+
+    #start {
+        font-size: 15px;
+    }
+
+    .quiz-timer {
+        margin-left: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn4, .btn5 {
+        font-size: 15px;
+    }
+
+    #initials-score {
+        font-size: 15px;
+    }
+}
+
+/* this is where media queries for smaller screen sizes go*/
+@media screen and (max-width: 866px){
+    main {
+        max-width:30%;
+        max-height: 75%;
+    }
+    .start-screen h5 {
+        font-size: 15px;
+        margin-top: -2.2rem;
+    }
+
+    .start-screen h3 {
+        font-size: 8px;
+    }
+
+    #start {
+        font-size: 12px;
+    }
+
+    .quiz-timer {
+        margin-left: 88px;
+        font-size: 12px;
+    }
+
+    .start-screen h4 {
+        padding-bottom: 0rem;
+        font-size: 10px;
+    }
+
+    .start-screen li {
+        font-size: 8px;
+        margin-left: -35px;
+        padding-bottom: 1.5rem;
+    }
+
+    #questions {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .btn1, .btn4, .btn5 {
+        font-size: 10px;
+    }
+
+    #initials-score {
+        font-size: 15px;
+        padding: 0rem 2rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    main {
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    main {
+        max-width:100%;
+    }
+}
