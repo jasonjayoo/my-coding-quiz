@@ -1,12 +1,12 @@
 # My-Coding-Quiz
 
-(Homework-3: Intro to Javascript: Password Generator)
+(Homework-4: Web API's: Code Quiz)
 
 <br>
 
 ## Project Description: 
 
-Odd numbered week homework assignment. Develop given code prompts to generate a random characters password with options for upperCase, lowerCase, symbols, and numbers.
+Even numbered week homework assignment. This weeks homework required us to create a coding quiz game from scratch using basic javascript only.
 
 <br> 
 
@@ -31,7 +31,7 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Installation
 <br>
-** Go to <a href="https://jasonjayoo.github.io/password-generator" target="_blank">Password-Generator</a> In order to view the Password Generator Webpage.
+** Go to <a href="https://jasonjayoo.github.io/my-coding-quiz/" target="_blank">My-Coding-Quiz</a> In order to view the My Coding Quiz Game Webpage.
 
 <br>
 <br>
@@ -41,39 +41,43 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 <br>
 <br>
 
-[Screenshot1](images/Screenshot1.png)  "Main Page"
+[Screenshot1](images/Screenshot1.png)  "Quiz Intro Screen + Start Button"
 <img src="images/Screenshot1.png">
 
 <br>
 
-[Screenshot2](images/Screenshot2.png)  "Password Length Prompt"
+[Screenshot2](images/Screenshot2.png)  "Question 1 + Timer Initiated"
 <img src="images/Screenshot2.png">
 
 <br>
 
-[Screenshot3](images/Screenshot3.png)  "Uppercase Selection Prompt"
+[Screenshot3](images/Screenshot3.png)  "Question 2"
 <img src="images/Screenshot3.png">
 
 <br>
 
-[Screenshot4](images/Screenshot4.png)  "Lowercase Selection Prompt"
+[Screenshot4](images/Screenshot4.png)  "Question 3"
 <img src="images/Screenshot4.png">
 
 <br>
 
-[Screenshot5](images/Screenshot5.png)  "Symbol Selection Prompt"
+[Screenshot5](images/Screenshot5.png)  "Question 4"
 <img src="images/Screenshot5.png">
 
 <br>
 
-[Screenshot6](images/Screenshot6.png)  "Number Selection Prompt"
+[Screenshot6](images/Screenshot6.png)  "Question 5"
 <img src="images/Screenshot6.png">
 
 <br>
 
-[Screenshot7](images/Screenshot7.png)  "Example Generated Password"
+[Screenshot7](images/Screenshot7.png)  "Final Score Screen + Initials Input + Submit Button"
 <img src="images/Screenshot7.png">
 
+<br>
+
+[Screenshot8](images/Screenshot8.png)  "Initials + Score Screen + Reset Button"
+<img src="images/Screenshot8.png">
 
 <br>
 <br>
@@ -81,14 +85,20 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Credits:
 
-- I would like to thank my tutor Mr. Faran Navazi for being an instrumental help in teaching me about javascript. 
+<br>
+
+- My classmates: Tyler Welker & Jeoffrey Batangan were essential collaborators during the creation of this coding game! Thank you guys. 
+
+<br>
+
+- I would also like to thank my tutor Mr. Faran Navazi for help me with roadblocks I encountered along the way. 
 
 <br>
 <br>
 
 ## License:
 <br>
-    -  Non applicable as of this time
+    -  Non-applicable as of this time
 <br>
 <br>
 
@@ -100,10 +110,17 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Features:
 <br>
-    - Generate password button when clicked will display a prompt.
-    - Users must select a password length between 8-128          characters in order to continue generating a password.
-    - Once a number of characters has been placed by the user the prompt will ask if the user would like to include upperCase characters, lowerCase characters, special(symbol) characters and numeric characters.
-    - once all of the characters have either been selected or not selected (at least one must be selected in order for a password to be generated or the default placeholder of "your secure password" will appear in the center text area.). A randomly generate password will appear in the center text area.
+    - A coding quiz game that include a total of 5 questions.
+    - Once the player initiates the game by clicking the start button in the first screen the game beings.
+    - The timer begins to countdown from 60 seconds
+    - For every correct answer the player selects the button turns green upon click and the the player is given 1 point.
+    - For every incorrect answer the player selects the button turns red upon click and the players available time is reduced by 8 seconds from the remaining time. 
+    - If the timer goes down to zero the game will be over and the total points tallied in the score screen.
+    - The score screen will show how many points the players earned.
+    - The score screen also has an input box to type in their initials. Up to 3 Upper or Lowercase Alphabet Characters or Blanks if they wish to remain anonymous are allowed. 
+    - Once the player is finished with the initials box they can click the submit button.
+    - Once the submit button is clicked the final score and initials screen will display their score. They can click the reset button to try again. Their previous scores will be kept on file in the local storage. 
+
 <br>
 <br>
 
@@ -115,7 +132,7 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Tests:
 <br>
-    - Test the password coding by generating a random password! Have fun. 
+    - Try the quiz game out yourself and see how well you can do!. 
     <br>
     - You can test out the webpage on vsc or directly in the inspect window of your browser. 
 
@@ -126,23 +143,23 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 <br>
 
-1. The password generator styling and display is a carbon copy of the demo provided in the homework folder.  
-2. The generate password button will deploy a prompt for the users to select customized options
-3. The password length as specified was set to a minimum of 8 characters and a maximum of 128 characters. Anything outside those parameters will be kicked back to the original password length prompt. 
-4. When a character length between 8 and 128 has been added by the user the display prompt will ask if the user would like to include:
-<br><br>
-             a). Uppercase Character
-        <br>
-             b). Lowercase Character
-        <br>
-             c). Special (symbol) Character
-        <br>
-             d). Numeric Character
-        <br>
-        <br>
-        * [ok] means include, [cancel] means do not include. 
-
-5. Once all the options have been run a random password will be generated and displayed in the center text area.
+1. The Coding Quiz meets the criteria's listed in the assignment.
+<br>
+    - A clickable Start Button which starts the quiz game needs to be created.
+    <br>
+    - A timer starts once the game begins and the questions are presented.
+    <br>
+    - When an answer has been selected the next question is displayed on the screen.
+    <br>
+    - If the player selects an incorrect answer the remaining time is reduced by 8 seconds and the next question is displayed.
+    <br>
+    - When all the questions have been answered or the time runs out the game ends.
+    <br>
+    - When the game ends the player is taken to the score screen where their score is shown. They can enter their initials in the initials input box and click submit.
+    <br>
+    - Once they click submit the player will be taken to the Final score and initials screen where they can see their initials and score rendered on the page.
+    <br>
+    - They player can then click the reset button to try again. Their scores from previous attempts will be stored in the local storage and will continue to render after each game. 
 
 <br>
 <br>
@@ -151,9 +168,11 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 <br>
 
-1. The base html format needed very few changes.
-2. The only addition/change made to the original html was the addition of a second button designated as "copy to clipboard" that was placed to the right of the "generate password" button.
-
+1. The HTMl includes within the body element: the main element with several divs which holds the start screen text and start button, questions txt with the answers as buttons, the quiz timer, final score texts and submit button, and the footer which holds in the last screen with the reset button.
+<br>
+2. Unique and custom made questions and answers were created by yours truy for this quiz game.
+<br>
+3. The input element within the end-screen has the "Your Final Score" with the score in located in a span. The input element has a onkeypress which limits allowable keys to only the upper and lowercase alphabets.
 <br>
 <br>
 
@@ -161,12 +180,9 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 <br>
 
-1. The main changes in the given CSS was the addition of the second button "copy to clipboard" and its stylization
-2. The "generate password" button's border was given detailed stylization to appear like that in the mock demo provided.
-3. The "generate password" button's color was changed to red and the text color changed to black. The padding was slightly altered to adjust for the difference in text length of button1 and button2
-4. Button hover added so background of the buttons would change color when users hovered the cursor over the button.
-5. Password id's width was changed along with the top and bottom padding so it would look like the mock demo provided.
-6. The border of the password id was also changed to dashed.
+1. The CSS was created to best house and style all the texts, timer, and buttons. Pseudo code for hover and active was used for all the buttons as well. 
+<br>
+2. Media Queries was also included to adjust to several different screen sizes (not all but many).
 
 <br>
 <br>
@@ -175,30 +191,34 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 <br>
 
-1. Variables for the specialCharacters, numericCharacters, lowerCased Characters, and upperCased Characters were placed in the global scope at the very top.
-2. Under the generate password function variables for holding the results of the possible password characters for the four different options was created 
-3. Under the same generate password function a variable for the results for the randomChar generated by the possible password variable was created so the results of the randomChar could be 'returned'.
-4. Variable for the length of password characters was created with parseInt and prompt to generate and return an integer.
-5. if created to set length requirement of the password to be between 8 and 128 characters.
-6. var confirmation prompt for uppercase, lowercase, special and numbers created for users with if === true for each, so that users can choose either to include or not include the options. If none were chosen the default placeholder would appear in the center text area instead of a randomly generate password.
-7. var randomindex set to math.floor with math.random to generate a numeric value of the select character(s).
-8. var randomChar added so the selected option by the user will be pushed up to the 'possiblePassword' variable.
-7. return results set with .join to remove the '' and set the randomly generate password into one line of text. 
-8. function writePassword set to display generatePassword results. 
-9. passwordtext set with .value to be var password and the passwordtext document.queryselector set to be displayed via the html under the id of password so the randomly generate password will be displayed in the center text area.
+1. Variables for the all the div classes and ids that were to be affect was created.
+<br>
+2. QuerySelector and to the lesser extent getElementById were used to pull the classes and id within the html.
+<br>
+3. The correct answers were directly linked to the specially titled id names of the answers buttons.
+<br>
+4. The variable for the amount of time we set to (secondsLeft) which was a total of 60 seconds.
+<br>
+5. The first function I coded was the startQuiz which has the timerInterval Function built into it (object method).
+<br>
+6. answers1Div - answers5Div are individual event-listener functions which render only the select question(s) in sequential order. While hiding all other screens. The correct button is targeted to give a point of 1. The penalty for choosing anything but the correct answer (aka incorrect answer) the secondsLeft is reduced by 8. Whenever an answer button is clicked (correct or incorrect) the current answers#Div is hidden and the next answers#Div function is rendered. 
+<br>
+7. answers5Div once a button has been clicked renders the submitBtn event-listener function which displays the highscores var where the players score will be rendered and initials var where the player can type in their initials. Along with the submit button itself that once clicked will render the Players Initials and their Score in the Initials and Final Score Screen. Which are then stored in the local storage via the [window.localStorage.setItem("highscores", JSON.stringify(highscores));
+showAllScores();]. The highscores will received the players score and initials via the newScore being pushed inot the highscores var and the highscores var being stringified via JSON.Stringify.
+<br>
+8. The showAllScores function will call the highscores var that has the players initials and score which is stored in the local storage via the window.localstorage.getItem. A new "p" element created within the var listItem is created and appended to the tableEl which is set as all-scores id in the html. The listItem var will render the textcontent as the player "person" .initials and score. 
+<br>
+9. Lastly, a reset button is in the Initials and Final Score screen that once clicked, allows the user to replay the game. All scores are stored in the local storage and tallied up and rendered along with the current score. 
 
 <br>
 <br>
 
 ## URL (Github Repository):
 
-Click [here](https://github.com/jasonjayoo/password-generator) to go to the Password-Generator Github Repository
+Click [here](https://github.com/jasonjayoo/my-coding-quiz) to go to the My-Coding-Quiz Github Repository
 
 <br>
 
 ## URL (Published Webpage):
 
-<a href="https://jasonjayoo.github.io/password-generator/" target="_blank">Password-Generator</a>
-
-
-
+<a href="https://jasonjayoo.github.io/my-coding-quiz/" target="_blank">My-Coding-Quiz</a>

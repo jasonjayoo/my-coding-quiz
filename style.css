@@ -1,7 +1,9 @@
+/* universal stylization for the entire webpage to have border-box */
 * {
     box-sizing: border-box;
 }
 
+/* this is the body stylization properties and settings */
 body {
     background: linear-gradient(217deg, #1a87e0, #22d4b1);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -9,10 +11,12 @@ body {
     overflow:hidden;
 }
 
+/* setting of .hide to be display nothing on the screen when called */
 .hide{
     display: none;
 }
 
+/* the container for all the different screens */
 main {
     max-width:50%;
     margin: 4rem auto;
@@ -25,6 +29,7 @@ main {
     font-size: 62.5%;
 }
 
+/* "Rules" stylization settings */
 h4 {
     color: red;
     font-size:1rem;
@@ -33,12 +38,13 @@ h4 {
     padding-bottom:1rem;
 }
 
+/* starting page specs (specs = specifications) */
 .start-screen {
     text-align: center;
     padding: 0 3rem;
 }
 
-
+/* Title of game specs */
 h1 {
     display: inline-block;
     font-size: 30px;
@@ -51,27 +57,32 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* explanation message specs */
 .start-screen h3 {
     font-size: 15px;
     display: block;
 }
 
+/* rules ol spec */
 .start-screen ol {
     font-size: 20px;
 }
 
+/* rules stylization specs */
 .start-screen li {
     text-align: start;
     font-size: 15px;
     padding-bottom: 1rem;
 }
 
+/* "Good Luck" message specs */
 .start-screen h5 {
     font-size: 25px;
     color:rgb(0, 13, 128);
     text-align: center;
 }
 
+/* Start button specs */
 #start {
     background: linear-gradient(217deg, #1a87e0, #22d4b1);
     border: 1px solid #1a87e0; 
@@ -83,17 +94,26 @@ h1 {
     padding: .75rem 2rem;
 }
 
+/* Start button pseudo code for when cursor is hovering over btn */
 #start:hover {
     cursor: pointer;
     background: darkblue;
 }
 
+/* Start button pseudo code for when button is being clicked */
 #start:active {
     box-shadow: none;
     background: red;
 }
 
+/* questions specs */
+#questions {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    margin-left: 3px;
+}
 
+/* questions box specs */
 #answers1, #answers2, #answers3, #answers4, #answers5 {
     display: flex;
     flex-direction: column;
@@ -103,12 +123,8 @@ h1 {
     width: fit-content;
 }
 
-#questions {
-    font-size: 25px;
-    padding-bottom: 1rem;
-    margin-left: 3px;
-}
 
+/* answer buttons specs */
 .btn1, .btn2, .btn3, .btn4, .btn5 {
     background-color: lightgray;
     border-left: 1px solid black; 
@@ -125,22 +141,25 @@ h1 {
     width: fit-content;
 }
 
+/* pseudo code for answer buttons when hovering over btns */
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover {
     cursor: pointer;
     background: yellow;
 }
 
+/* pseudo code for when btns being clicked on (incorrect answers light up red */
 .btn1:active, .btn2:active, .btn3:active, .btn4:active, .btn5:active {
     box-shadow: none;
     background: red;
 }
 
+/* for when correct answer is clicked */
 #a2:active, #b3:active, #c1:active, #d2:active, #e2:active {
     box-shadow: none;
     background: green;
 }
 
-
+/* timer specs */
 .quiz-timer {
     margin: 0 auto;
     width: 30%;
@@ -153,10 +172,12 @@ h1 {
     border-radius: 20px;
 }
 
+/* countdown number in red */
 #countdown {
     color: red;
 }
 
+/* Final score screen specs */
 #last-screen {
     margin: 50%;
     text-align: center;
@@ -164,16 +185,18 @@ h1 {
     margin: 0 auto;
 }
 
+/* "Your Final Score font specs */
 #last-screen h2 {
     font-size: 1em;
 }
 
+/* score number color an fontsize specs */
 #score {
     color: rgb(14, 28, 231);
     font-size: 1.5em;
 }
 
-
+/* input box specs */
 input {
     text-align: center;
     border: 1px solid black; 
@@ -183,21 +206,25 @@ input {
     padding: 5px 5px;
 }
 
+/* submit button specs */
 #submit {
     box-shadow: 2px 2px 5px black;
     border-radius: 5px;
 }
 
+/* submit btn pseudo code for on hover */
 #submit:hover {
     cursor: pointer;
     background-color: lightgoldenrodyellow;
 }
 
+/* subtmit btn pseudo code for when being clicked on */
 #submit:active {
     cursor: pointer;
     background-color: green;
 }
 
+/* last screen with initials and score display with reset btn specs */
 .reset-screen {
     display: flex;
     flex-direction: column;
@@ -206,6 +233,7 @@ input {
 
 }
 
+/* last screen title specs */
 #initials-score {
     margin: 0 auto;
     font-size: 35px;
@@ -217,11 +245,14 @@ input {
     margin-bottom: 1em;
 }
 
+/* "click reset to try again!" stylization specs */
 footer h3 {
     color:rgb(15, 179, 102);
     font-size: 12px;
     margin-bottom: 1.5em;
 }
+
+/* locally store scores display specs */
 footer #all-scores{
     font-size: 28px;
     margin-top: .3em;
@@ -230,6 +261,7 @@ footer #all-scores{
     color:rgb(55, 16, 230);
 }
 
+/* reset button sepcs */
 #reset {
     display: block;
     box-shadow: 2px 2px 5px black;
@@ -239,15 +271,19 @@ footer #all-scores{
     padding: .2rem .8rem;
 }
 
+/* reset pseudo code for on hover */
 #reset:hover {
     cursor: pointer;
     background-color: blueviolet;
 }
 
+/* reset pseudo code for when being clicked on */
 #reset:active {
     cursor: pointer;
     background-color: rgb(28, 207, 28);
 }
+
+/* these are where media queries for smaller screen sizes - total of 4 different screen widths adjustments created*/
 
 @media screen and (max-width: 900px){
     main {
@@ -280,7 +316,7 @@ footer #all-scores{
     }
 }
 
-/* this is where media queries for smaller screen sizes go*/
+/* media query */
 @media screen and (max-width: 866px){
     main {
         max-width:30%;
@@ -333,12 +369,14 @@ footer #all-scores{
     }
 }
 
+/* media query */
 @media screen and (max-width: 660px) {
     main {
         max-width:100%;
     }
 }
 
+/* media query */
 @media screen and (max-width: 390px) {
     main {
         max-width:100%;

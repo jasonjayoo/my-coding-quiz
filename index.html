@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Webpage title -->
     <title>My-Coding-Quiz</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- The container where all the different screens will go -->
     <main id="container">
-      <div class="start-screen">
+    <!-- The First screen with the title of the quiz, the rules and start button -->
+      <div class="start-screen" alt="start screen" Title="This is the Start Screen where the quiz game begins">
         <h1>Test Your Coding Knowledge</h1>
         <h3>
           This quiz is to test your coding knowledge. <br />(before clicking
           start, please review the rules below.)
         </h3>
         <br />
+        <!-- rules -->
         <h4>Rules:</h4>
         <ol>
           <li>
@@ -30,12 +34,14 @@
           </li>
         </ol>
         <h5>Good Luck!</h5>
-        <button id="start">START</button>
+        <!-- start button to being the quiz game -->
+        <button id="start" alt="Start Button" Title="This is the start button click it to start the quiz game">START</button>
       </div>
 
+<!--Question 1 -->
       <div class="question_1 hide">
-        <div id="questions">What does the DOM stand for?</div>
-
+        <div id="questions" alt="Question One" Title="This is question number one">What does the DOM stand for?</div>
+<!-- Four answer choices as buttons (Same for each question - all have 4 questions as button with unique id names) -->
         <div id="answers1">
           <button class="btn1" id="a1">Digital Optimization Method</button>
 
@@ -46,9 +52,9 @@
           <button class="btn1" id="a4">Direct Object Modulus</button>
         </div>
       </div>
-
+<!-- Question 2 -->
       <div class="question_2 hide">
-        <div id="questions">What is NOT an HTML semantic</div>
+        <div id="questions" alt="Question Two" Title="This is question number two">What is NOT an HTML semantic</div>
         <div id="answers2">
           <button class="btn2" id="b1">body</button>
 
@@ -60,8 +66,9 @@
         </div>
       </div>
 
+<!-- Question 3 -->
       <div class="question_3 hide">
-        <div id="questions">In how many days was Javascript created?</div>
+        <div id="questions" alt="Question Three" Title="This is question number three">In how many days was Javascript created?</div>
         <div id="answers3">
           <button class="btn3" id="c1">10</button>
 
@@ -72,9 +79,9 @@
           <button class="btn3" id="c4">500</button>
         </div>
       </div>
-
+<!-- Question 4 -->
       <div class="question_4 hide">
-        <div id="questions">In Javascript what does the (.push) method do?</div>
+        <div id="questions" alt="Question Four" Title="This is question number four">In Javascript what does the (.push) method do?</div>
         <div id="answers4">
           <button class="btn4" id="d1">
             Removes an item from the end of an array
@@ -92,8 +99,9 @@
         </div>
       </div>
 
+<!-- Question 5 -->
       <div class="question_5 hide">
-        <div id="questions">
+        <div id="questions" alt="Question Five" Title="This is question number five">
           In CSS, what does the border-radius property do?
         </div>
         <div id="answers5">
@@ -110,15 +118,18 @@
           </button>
         </div>
       </div>
-
+<!-- The Quiz Timer Screen -->
       <section class="quiz-time-screen hide">
-        <div class="quiz-timer">
+        <!-- actual timer -->
+        <div class="quiz-timer" alt="Quiz Timer" Title="This is the timer it begins at sixty seconds">
+          <!-- count down starts at 60 -->
           <p>Time: <span id="countdown">60</span> Seconds Remaining</p>
         </div>
       </section>
 
+      <!-- Screen were the score is rendered and input tag placed for player to enter in their initials, and submit button -->
       <div class="end-screen hide">
-        <div id="last-screen">
+        <div id="last-screen" alt="Score Screen" Title="Your score is rendered below">
           <h2>Your Final Score: <span id="score">0</span></h2>
           <!-- <div id="final-score"></div> -->
           <input
@@ -127,21 +138,21 @@
             placeholder="Type your initials here"
             name="initials"
             maxlength="3"
-            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"/>
+            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" alt="Place your initials here" Title="This is where you can type in your initials"/>
           <button id="submit">submit</button>
         </div>
       </div>
-
+      <!-- Last screen where the players initials and score are rendered and the player can choose to play again by clicking the reset buton -->
       <footer class="final-screen hide">
-        <div class="reset-screen">
+        <div class="reset-screen" alt="Your initials and final score screen" Title="This is where your initials and scores are displayed">
           <span id="initials-score">Your Initials & Score</span>
           <div id="all-scores"></div>
           <h3>Click reset to try again!</h3>
-          <button id="reset">reset</button>
+          <button id="reset" alt="Reset Button" Title="This is a reset button click to replay the game">reset</button>
         </div>
       </footer>
     </main>
-
+<!-- javascript link -->
     <script src="script.js"></script>
   </body>
 </html>
