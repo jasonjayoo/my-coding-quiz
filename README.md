@@ -91,7 +91,7 @@ Even numbered week homework assignment. This weeks homework required us to creat
 
 <br>
 
-- I would also like to thank my tutor Mr. Faran Navazi for help me with roadblocks I encountered along the way. 
+- I would also like to thank my tutor Mr. Faran Navazi for helping me with roadblocks I encountered along the way. 
 
 <br>
 <br>
