@@ -379,6 +379,42 @@ footer #all-scores{
 
 }
 
+@media screen and (max-width: 720px){
+
+    h1 {
+        font-size: 6px;
+        line-height: 10px;
+        padding: 10px 8px 10px 8px;
+        margin-bottom: 0.5rem;
+    }
+
+    .start-screen h5 {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    .btn4, .btn5 {
+        font-size: 8px
+    }
+
+    .quiz-timer {
+        margin-left: 71px;
+        font-size: 5px;
+    }
+
+    #last-screen h2 {
+        font-size: .5em;
+    }
+
+
+    #initials-score {
+        font-size:12px;
+
+    }
+
+} 
+
+
 /* media query */
 @media screen and (max-width: 660px) {
     main {
