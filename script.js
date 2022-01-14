@@ -25,9 +25,6 @@ var lastScreen = document.querySelector("#last-screen")
 // to connect initials and score screen
 var finalScreen = document.querySelector(".final-screen")
 
-
-
-
 // to connect actual score numeric value
 var scoreEl = document.querySelector("#score");
 

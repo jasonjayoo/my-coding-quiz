@@ -369,6 +369,16 @@ footer #all-scores{
     }
 }
 
+/* media query iphone11 */
+@media screen and (max-width: 828px){
+
+    .quiz-timer {
+        margin-left: 83px;
+        font-size: 12px;
+    }
+
+}
+
 /* media query */
 @media screen and (max-width: 660px) {
     main {
