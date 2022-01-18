@@ -252,6 +252,12 @@ footer h3 {
     margin-bottom: 1.5em;
 }
 
+#clearScore {
+    color:rgb(204, 0, 255);
+    font-size: 12px;
+    margin-bottom: 1.5em;
+}
+
 /* locally store scores display specs */
 footer #all-scores{
     font-size: 28px;
@@ -260,6 +266,28 @@ footer #all-scores{
     font-family: monospace;
     color:rgb(55, 16, 230);
 }
+
+#clear {
+    display: block;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .2rem .8rem;
+}
+
+/* reset pseudo code for on hover */
+#clear:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+/* reset pseudo code for when being clicked on */
+#clear:active {
+    cursor: pointer;
+    background-color: rgb(28, 207, 28);
+}
+
 
 /* reset button sepcs */
 #reset {

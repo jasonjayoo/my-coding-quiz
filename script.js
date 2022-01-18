@@ -212,8 +212,7 @@ answers5Div.addEventListener("click", function(event) {
 // connect submit btn
 var submitBtn = document.querySelector("#submit");
 
-// connect reset btn
-var resetBtn = document.querySelector("#reset");
+
 
 // when submit btn is clicked the final screen with players initials and score are rendered along with the reset btn
 submitBtn.addEventListener("click", function() {
@@ -258,6 +257,16 @@ function showAllScores() {
     });
 }
 
+var clearBtn = document.querySelector("#clear");
+
+clearBtn.addEventListener("click", function() {
+    window.localStorage.clear();
+    var tableEl = document.querySelector("#all-scores");
+    tableEl.innerHTML = "";
+})
+
+// connect reset btn
+var resetBtn = document.querySelector("#reset");
 // reset button to replay the game, sends player back to the start of the quiz game.
 resetBtn.addEventListener("click", function() {
     window.location.reload();
