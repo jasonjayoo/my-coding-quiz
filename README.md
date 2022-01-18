@@ -80,6 +80,11 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <img src="images/Screenshot8.png">
 
 <br>
+
+[Screenshot9](images/Screenshot9.png)  "Added Clear Score History Button"
+<img src="images/Screenshot9.png">
+
+<br>
 <br>
 
 
