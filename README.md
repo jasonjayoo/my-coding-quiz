@@ -174,9 +174,9 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <br>
 
 1. The HTMl includes within the body element: the main element with several divs which holds the start screen text and start button, questions txt with the answers as buttons, the quiz timer, final score texts and submit button, and the footer which holds in the last screen with the reset button.
-<br>
+
 2. Unique and custom made questions and answers were created by yours truy for this quiz game.
-<br>
+
 3. The input element within the end-screen has the "Your Final Score" with the score in located in a span. The input element has a onkeypress which limits allowable keys to only the upper and lowercase alphabets.
 <br>
 <br>
@@ -186,7 +186,7 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <br>
 
 1. The CSS was created to best house and style all the texts, timer, and buttons. Pseudo code for hover and active was used for all the buttons as well. 
-<br>
+
 2. Media Queries was also included to adjust to several different screen sizes (not all but many).
 
 <br>
@@ -197,22 +197,22 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <br>
 
 1. Variables for the all the div classes and ids that were to be affect was created.
-<br>
+
 2. QuerySelector and to the lesser extent getElementById were used to pull the classes and id within the html.
-<br>
+
 3. The correct answers were directly linked to the specially titled id names of the answers buttons.
-<br>
+
 4. The variable for the amount of time we set to (secondsLeft) which was a total of 60 seconds.
-<br>
+
 5. The first function I coded was the startQuiz which has the timerInterval Function built into it (object method).
-<br>
+
 6. answers1Div - answers5Div are individual event-listener functions which render only the select question(s) in sequential order. While hiding all other screens. The correct button is targeted to give a point of 1. The penalty for choosing anything but the correct answer (aka incorrect answer) the secondsLeft is reduced by 8. Whenever an answer button is clicked (correct or incorrect) the current answers#Div is hidden and the next answers#Div function is rendered. 
-<br>
+
 7. answers5Div once a button has been clicked renders the submitBtn event-listener function which displays the highscores var where the players score will be rendered and initials var where the player can type in their initials. Along with the submit button itself that once clicked will render the Players Initials and their Score in the Initials and Final Score Screen. Which are then stored in the local storage via the [window.localStorage.setItem("highscores", JSON.stringify(highscores));
 showAllScores();]. The highscores will received the players score and initials via the newScore being pushed inot the highscores var and the highscores var being stringified via JSON.Stringify.
-<br>
+
 8. The showAllScores function will call the highscores var that has the players initials and score which is stored in the local storage via the window.localstorage.getItem. A new "p" element created within the var listItem is created and appended to the tableEl which is set as all-scores id in the html. The listItem var will render the textcontent as the player "person" .initials and score. 
-<br>
+
 9. Lastly, a reset button is in the Initials and Final Score screen that once clicked, allows the user to replay the game. All scores are stored in the local storage and tallied up and rendered along with the current score. 
 
 <br>
