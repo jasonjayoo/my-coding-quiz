@@ -116,14 +116,32 @@ Even numbered week homework assignment. This weeks homework required us to creat
 ## Features:
 <br>
     - A coding quiz game that include a total of 5 questions.
+    <br>
+    <br>
     - Once the player initiates the game by clicking the start button in the first screen the game beings.
+    <br>
+    <br>
     - The timer begins to countdown from 60 seconds
+    <br>
+    <br>
     - For every correct answer the player selects the button turns green upon click and the the player is given 1 point.
-    - For every incorrect answer the player selects the button turns red upon click and the players available time is reduced by 8 seconds from the remaining time. 
+    <br>
+    <br>
+    - For every incorrect answer the player selects the button turns red upon click and the players available time is reduced by 8 seconds from the remaining time.
+    <br>
+    <br> 
     - If the timer goes down to zero the game will be over and the total points tallied in the score screen.
+    <br>
+    <br>
     - The score screen will show how many points the players earned.
-    - The score screen also has an input box to type in their initials. Up to 3 Upper or Lowercase Alphabet Characters or Blanks if they wish to remain anonymous are allowed. 
+    <br>
+    <br>
+    - The score screen also has an input box to type in their initials. Up to 3 Upper or Lowercase Alphabet Characters or Blanks if they wish to remain anonymous are allowed.
+    <br>
+    <br> 
     - Once the player is finished with the initials box they can click the submit button.
+    <br>
+    <br>
     - Once the submit button is clicked the final score and initials screen will display their score. They can click the reset button to try again. Their previous scores will be kept on file in the local storage. 
 
 <br>
@@ -139,6 +157,7 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <br>
     - Try the quiz game out yourself and see how well you can do!. 
     <br>
+    <br>
     - You can test out the webpage on vsc or directly in the inspect window of your browser. 
 
 <br>
@@ -149,21 +168,13 @@ Even numbered week homework assignment. This weeks homework required us to creat
 <br>
 
 1. The Coding Quiz meets the criteria's listed in the assignment.
-<br>
     - A clickable Start Button which starts the quiz game needs to be created.
-    <br>
     - A timer starts once the game begins and the questions are presented.
-    <br>
     - When an answer has been selected the next question is displayed on the screen.
-    <br>
     - If the player selects an incorrect answer the remaining time is reduced by 8 seconds and the next question is displayed.
-    <br>
     - When all the questions have been answered or the time runs out the game ends.
-    <br>
     - When the game ends the player is taken to the score screen where their score is shown. They can enter their initials in the initials input box and click submit.
-    <br>
     - Once they click submit the player will be taken to the Final score and initials screen where they can see their initials and score rendered on the page.
-    <br>
     - They player can then click the reset button to try again. Their scores from previous attempts will be stored in the local storage and will continue to render after each game. 
 
 <br>
@@ -171,19 +182,15 @@ Even numbered week homework assignment. This weeks homework required us to creat
 
 ## HTML - Details:
 
-<br>
-
 1. The HTMl includes within the body element: the main element with several divs which holds the start screen text and start button, questions txt with the answers as buttons, the quiz timer, final score texts and submit button, and the footer which holds in the last screen with the reset button.
 
 2. Unique and custom made questions and answers were created by yours truy for this quiz game.
 
 3. The input element within the end-screen has the "Your Final Score" with the score in located in a span. The input element has a onkeypress which limits allowable keys to only the upper and lowercase alphabets.
-<br>
-<br>
+
 
 ## CSS - Details:
 
-<br>
 
 1. The CSS was created to best house and style all the texts, timer, and buttons. Pseudo code for hover and active was used for all the buttons as well. 
 
@@ -194,7 +201,6 @@ Even numbered week homework assignment. This weeks homework required us to creat
 
 ## JS - Details:
 
-<br>
 
 1. Variables for the all the div classes and ids that were to be affect was created.
 
