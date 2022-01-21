@@ -115,7 +115,7 @@ Even numbered week homework assignment. This weeks homework required us to creat
 
 ## Features:
 <br>
-    - A coding quiz game that include a total of 5 questions.
+    - A coding quiz game that includes a total of 5 questions.
     <br>
     <br>
     - Once the player initiates the game by clicking the start button in the first screen the game beings.
@@ -188,6 +188,8 @@ Even numbered week homework assignment. This weeks homework required us to creat
 
 3. The input element within the end-screen has the "Your Final Score" with the score in located in a span. The input element has a onkeypress which limits allowable keys to only the upper and lowercase alphabets.
 
+<br>
+
 
 ## CSS - Details:
 
@@ -197,7 +199,7 @@ Even numbered week homework assignment. This weeks homework required us to creat
 2. Media Queries was also included to adjust to several different screen sizes (not all but many).
 
 <br>
-<br>
+
 
 ## JS - Details:
 
